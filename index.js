@@ -72,7 +72,7 @@ app.get("/newLaunchProducts", async (req, res) => {
     const generalProductsCollection = db.collection('generalproducts');
 
     const thirtyDaysAgo = new Date();
-    thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
+    thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 90);
 
     const pipeline = [
       {
